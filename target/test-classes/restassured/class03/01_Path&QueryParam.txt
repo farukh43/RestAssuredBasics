@@ -1,0 +1,33 @@
+Class 03 - Rest Assured
+*********************
+
+1) Path and Query Parameters
+----------------------------------------------------------------------
+https://reqres.in/api/users?page=2
+https://reqres.in/api/users?page=2&id=7 
+
+users--> Path parameter
+?page=2&id=7 --> Query Parameter
+
+.get("https://reqres.in/api/{mypath}")
+
+--> we need to expilicity need to pass the path parameters here
+ --> queryParameter will will along with request , no need to pass
+		
+2) Cookies and headers
+---------------------------------------------------------------------
+--> Cookies values is NOT constant , it will change every time
+-->Cookie name is same 
+-->Refer the CookiesDemo.java for example
+
+Headers
+-----------------------------------------------------------------------
+-->Refer the HeaderDemo.java for example
+
+LoggingDemo
+------------------------------------------------------------------------
+we can log the different aspects of the request
+1--> Body
+2--> coockies
+3--> headers
+--> all

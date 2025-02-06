@@ -1,0 +1,34 @@
+Class 08 - Rest Assured
+------------------------------------------------------------------
+API Chaining
+------------------------------------------------------------------
+--> ITestContext context is used from TestNG to set the attributes to reuse in other tests
+
+--> if configure the classes as below 
+
+ <classes>
+    <class name="restassured.class08.CrateUser"/>
+      <class name="restassured.class08.GetUser"/>
+      <class name="restassured.class08.UpdateUser"/>
+      <class name="restassured.class08.DeleteUser"/>
+    </classes>
+     
+   this work for above config context.setAttribute("UserID", id);// This is available only in Test Level
+
+    <test thread-count="5" name="Test">
+    <classes>
+      <class name="restassured.class08.GetUser"/>
+    </classes>
+    </test>
+    
+    <test thread-count="5" name="Test">
+    <classes>
+     <class name="restassured.class08.UpdateUser"/>
+    </classes>
+    </test>
+    
+    we are doing class separately then we need to make below changes
+     context.getSuite().setAttribute("UserID", id); // while Creating the Id 
+     int id= (Integer) context.getSuite().getAttribute("UserID"); //for Suite Level -->this is recommended 
+	This will work for both class level as well as Suite level
+     

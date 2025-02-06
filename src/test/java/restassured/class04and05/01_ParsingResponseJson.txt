@@ -1,0 +1,44 @@
+Class 04 and 05 - Rest Assured
+*********************
+Response Validation --Parsing JSon Responce
+--------------------------------------------------
+--> we have different types of response validations
+--> then Section
+Here we have limitation where we can validate few fields but we cannot perform any looping and assertions
+
+--> Response Section
+----------------------------------------------
+--> we can store the value in Response varaiable and perform looping and assertion
+--> This approach is suggested
+
+JSONObject Class
+---------------------------------------------------
+we can perform different operation using JSONObject Class
+we need to convert the JSONObject to String format to perfom the operation
+JSONObject jo = new JSONObject(res.getBody().asString()); // Converting response to JSON object type
+
+Then we can perform operation like 
+//Validate a specific book name
+ //Total price of books
+ 
+ 
+**************************************************
+Request Response Might come in Json Array or Json Object
+response in Json Object 
+JSONObject jo = new JSONObject(res.getBody().asString());
+
+
+If we get the Json Array the we need to create a object of Json Array
+//  JSONArray jrr = new JSONArray(res.getBody().asString()) ; //--> if the response is in JSON Array
+
+JSONObject --> JSONARRAY --> JsonObject 
+JSONArray --> JsonObect --> Json Array
+**************************************************
+ 
+Response Validation --Parsing XML Responce
+--------------------------------------------------
+All the approaches are same as Json File 
+
+ParsingResponseXMLdata refer this java file for more details
+
+

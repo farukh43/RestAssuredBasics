@@ -1,0 +1,17 @@
+Class 06 - Rest Assured
+----------------------------------------------------------
+ JSON & XML Schema validations 
+----------------------------------------------------------
+Response Validations- we will focus on data
+Schema Validations --> we will focus on type os Data
+
+Json Response (.json) ---> Json schema (.json)
+XML Response (.xml) ---> xml schema (.xsd)
+
+https://www.liquid-technologies.com/online-json-to-schema-converter
+https://www.liquid-technologies.com/online-xml-to-xsd-converter
+
+Serial & De-serilisation
+-------------------------------------------------------------
+Serial 			---> POJO to JSON
+De-serilisation	---> Json to POJO

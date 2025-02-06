@@ -1,0 +1,16 @@
+Class 05 - Rest Assured
+*********************
+File Upload
+--------------------------------------------------
+File myfile =new File("C:\\Users\\Faruk\\Downloads\\AA_NewTestFileApiTest.txt");
+		File myfile2 =new File("C:\\Users\\Faruk\\Downloads\\AA_NewTestFileApiTest2.txt");
+		
+		given()
+		.multiPart("file",myfile)
+		.multiPart("file",myfile2)
+		.contentType("multipart/form-data")
+		.when()
+		.post("https://the-internet.herokuapp.com/upload")
+		
+		
+		This is the main part of File Upload

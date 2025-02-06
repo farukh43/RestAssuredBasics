@@ -1,0 +1,47 @@
+Class 08 - Rest Assured
+------------------------------------------------------------------
+Framework Development
+------------------------------------------------------------------
+
+Framework - Maintain all project related files.
+
+Objectives
+----------------
+1) Re-usability
+2) Maintainability
+3) Readability
+
+Hybrid Driven
+-----------------------------------------------------------------------
+Phases
+-----------------------------------------------------------------------
+1) Understanding requirement
+   - Functional specifications (static)
+   - Swagger
+
+2) Choose automation tool - Rest Assured Library
+
+3) Design
+
+4) Development
+
+5) Execution + CI
+
+-----------------------------------------------------------------------------
+
+Step 1: Create Maven Project
+Step 2: Update pom.xml with required dependecnies.
+step 3: Create Folder structure
+Step 4: Create Routes.java -----> contains URL's
+Step 5: Create UserEndPoints.java -----> CRUD methods implementation
+Step 6: Crete Test Cases
+
+Step 7: Create data driven test  
+    excel sheet   data  
+    Excell utility  
+    Dataproviders
+    
+Step 8: Add logs  
+    log4j2 dependency  
+    log4j2.xml ---> src/test/resource
+

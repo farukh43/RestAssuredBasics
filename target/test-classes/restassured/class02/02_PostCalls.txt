@@ -1,0 +1,64 @@
+Class 02 - Rest Assured
+*********************
+Different Ways of Sending Post Calls
+------------------------------------
+1.HashMap
+2.using org.json
+3.Using POJO (plain old Java Object)
+4.Using external json file
+
+1. HashMap
+--------------------------
+we can store the data in below format
+HashMap data = new HashMap();
+data.put("name", "John");
+data.put("location", "Los Angeles");
+data.put("phone", "123456789");
+	
+String CourseArray[]= {"C","Python"};
+data.put("courses", CourseArray);
+
+	given()
+//.contentType("application/json")
+.body(data)
+
+2.using org.json
+-----------------------------------
+JSONObject data = new JSONObject();
+data.put("name", "Scott");
+data.put("location", "CVG");
+data.put("phone", "123456789");
+
+String CourseArray[]= {"C","C++"};
+data.put("courses", CourseArray);
+
+given()
+//.contentType("application/json")
+.body(data.toString())
+
+Here we are converting the ****data.toString()****
+
+3.Using POJO (plain old Java Object)
+--------------------------------------------
+refer the POJO_PostRequest.java
+
+4.Using external json file
+----------------------------
+File Stored at
+C:\Learnings\ResuAssured\RestAssuredBasics\src\test\resources\testData\postBody.json
+
+We need to read the file
+  String filePath = System.getProperty("user.dir") + "/src/test/resources/testData/postBody.json";
+File f = new File(filePath);
+FileReader fr = new FileReader(f);
+JSONTokener jt = new JSONTokener(fr);
+JSONObject data = new JSONObject(jt);
+
+given()
+//.contentType("application/json")
+.body(data.toString())
+
+Here we are converting the ****data.toString()****	   
+******************************************************************************************
+Whenever we are sending the  JSON Object or jsonfile we need to convert the dat to Strong format
+Using data.toString() method

@@ -1,0 +1,6 @@
+Class 07 - Rest Assured
+------------------------------------------------------------------
+Java Faker API
+-------------------------------------------------------------------
+This will generate the Fake Data in runtime 
+which is useful whenever we required to use unique data for testing

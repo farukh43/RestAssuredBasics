@@ -1,0 +1,19 @@
+Class 07 - Rest Assured
+------------------------------------------------------------------
+Authorizations
+------------------------------------------------------------------
+Authentication - Valid or Not (User Has Access to Website Or Not)
+Authorization - Access(User has access to webSite - But authorized to access only Few Models or we can say authorized access few models)
+ 
+ Types of Authentications
+-------------------------------------------------------------------
+1. Basic Authentication --> Username and Password
+2. Bearer Token
+3. Digest Authentication --> Username and Password
+4. Preemptive Authentication --> Username and Password (Combination of Basic and Digest)
+5. OAuth 1.0 or OAuth2.0 
+6. API Key
+
+Refer Authentications.java for examples
+---------------------------------------------------------------------
+

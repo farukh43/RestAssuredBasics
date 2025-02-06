@@ -1,0 +1,42 @@
+RestAssured
+---------------------
+RestAssured is an API/Library through which we can automate RestAPI's.
+
+Pre-requisites:
+----------------------
+1) Java 9+ & Eclipse
+2) TestNG
+3) Maven (comes with Eclipse)
+
+dependencies
+-----------------------
+rest-assured
+json-path
+json
+gson-->**Revist
+testng
+scribejava-apis
+json-schema-validator
+xml-schema-validator
+
+RestAssured By default support gherkin Keywords
+--------------------------------------------------------
+/*
+    given()
+        content type, set cookies, add auth, add param, set headers info etc....
+        
+    when()
+        get, post, put, delete
+        
+    then()
+        validate status code, extract response, extract headers cookies & response body....
+        We can Use And as well to combine different Validations
+*/
+
+Static imports
+In order to use REST assured effectively it's recommended to statically import methods from the following classes:
+---------------------------------------------------------------------------------------------------
+import static io.restassured.RestAssured.*;
+import static io.restassured.matcher.RestAssuredMatchers.*;
+import static org.hamcrest.Matchers.*;
+
